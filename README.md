@@ -18,13 +18,22 @@ J in visual mode = Move selected line(s) down
 Leader + p = Paste copied text without overwriting the clipboard.
 Leader + y = Copy into system clipboard.
 
-
-
 ## LSP Key Maps
-Shift + p = Select previous item
+Shift + b = Select previous item
 Shift + n = Select next item
-Shift + y = Confirm selection
+Shift + Enter = Confirm selection
 Shift + Space = Start completion
+gd = Go to definiton
+K = Hover
+[d = Go to next
+]d = Go to previous
+Leader + vca = Code action
+Leader + vrr = References
+Leader + vrn = Rename
+Ctrl + h = Signature help
+:Mason = Open LSP server install list
+:LspInfo = Show info about attached LSP
+:LspLog = Show LSP log
 
 ### Vim Key Maps
 In file tree:
