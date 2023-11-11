@@ -21,6 +21,23 @@ return require('packer').startup(function(use)
         end
     })
 
+    use("folke/tokyonight.nvim")
+
+
+    use {
+        'olivercederborg/poimandres.nvim',
+        config = function()
+            require('poimandres').setup {
+                -- leave this setup function empty for default config
+                -- or refer to the configuration section
+                -- for configuration options
+            }
+        end
+    }
+
+    use('https://github.com/rktjmp/lush.nvim')
+    use('https://github.com/nocksock/bloop.nvim')
+
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
