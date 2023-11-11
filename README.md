@@ -12,6 +12,14 @@ Shift + h = Harpoon UI
 Leader + 1 .. 4 = Harpoon jump
 Leader + u = Undo Tree
 
+K in visual mode = Move selected lines(s) up
+J in visual mode = Move selected line(s) down
+
+Leader + p = Paste copied text without overwriting the clipboard.
+Leader + y = Copy into system clipboard.
+
+
+
 ## LSP Key Maps
 Shift + p = Select previous item
 Shift + n = Select next item
