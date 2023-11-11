@@ -5,7 +5,7 @@
 ## Key Maps
 Shift + s = Find files
 Ctrl + Shift + s = Find string in files
-Shift + g = Find in Git files
+Leader + g = Find in Git files
 Shift + e = Open file explorer (:Ex)
 Shift + a = Harpoon add
 Shift + h = Harpoon UI
