@@ -38,8 +38,8 @@ cmp.setup({
   },
   formatting = lsp_zero.cmp_format(),
   mapping = cmp.mapping.preset.insert({
-    ['<S-b>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<S-n>'] = cmp.mapping.select_next_item(cmp_select),
+    ['<S-[>'] = cmp.mapping.select_prev_item(cmp_select),
+    ['<S-]>'] = cmp.mapping.select_next_item(cmp_select),
     ['<S-Enter>'] = cmp.mapping.confirm({ select = true }),
     ['<S-Space>'] = cmp.mapping.complete(),
   }),
