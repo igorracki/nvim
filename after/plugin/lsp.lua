@@ -42,5 +42,6 @@ cmp.setup({
     ['<C-]>'] = cmp.mapping.select_next_item(cmp_select),
     ['<S-Enter>'] = cmp.mapping.confirm({ select = true }),
     ['<S-Space>'] = cmp.mapping.complete(),
+    ['<Esc>'] = cmp.mapping.close(),
   }),
 })
