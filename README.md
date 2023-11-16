@@ -28,9 +28,9 @@
 ```Leader + y``` = Copy into system clipboard.
 
 ## LSP Key Maps
-```Shift + [``` = Select previous item
+```Shift + [``` = Select previous item (or arrow up)
 
-```Shift + ]``` = Select next item
+```Shift + ]``` = Select next item (or arrow down)
 
 ```Shift + Enter``` = Confirm selection
 
