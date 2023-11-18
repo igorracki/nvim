@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "help", "java", "javascript", "typescript", "rust", "go", "c", "lua", "vim", "vimdoc" },
+  ensure_installed = { "help", "java", "javascript", "typescript", "rust", "go", "c", "lua", "vim", "vimdoc", "html" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -23,3 +23,5 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+
+vim.cmd('autocmd BufRead,BufNewFile *.hbs set filetype=html')
