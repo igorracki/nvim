@@ -27,6 +27,10 @@
 
 ```Leader + y``` = Copy into system clipboard.
 
+```dap``` = Delete the next block.
+
+```ci"``` = Change inside ".
+
 ## LSP Key Maps
 ```Ctrl + [``` = Select previous item (or arrow up)
 
