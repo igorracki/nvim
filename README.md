@@ -68,6 +68,8 @@
 
 ```:LspLog``` = Show LSP log
 
+```:TSUpdate``` = Update Treesitter
+
 ### Vim Key Maps
 In file tree:
 
