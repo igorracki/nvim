@@ -60,4 +60,13 @@ return require('packer').startup(function(use)
         }
     }
     use('ThePrimeagen/vim-be-good')
+
+    use { "catppuccin/nvim", as = "catppuccin" }
+
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional
+        },
+    }
 end)

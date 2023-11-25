@@ -9,7 +9,7 @@
 
 ```Leader + g``` = Find in Git files
 
-```Shift + e``` = Open file explorer (:Ex)
+```Shift + e``` = Open file explorer (:Ex) (or NvimTree)
 
 ```Shift + a``` = Harpoon add
 
@@ -30,6 +30,12 @@
 ```dap``` = Delete the next block.
 
 ```ci"``` = Change inside ".
+
+```Ctrl + t``` = New split tab.
+
+```Ctrl + w``` = Quit tab.
+
+```Ctrl + [h,j,k,l]``` = Navigate between tabs.
 
 ## LSP Key Maps
 ```Ctrl + [``` = Select previous item (or arrow up)

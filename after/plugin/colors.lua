@@ -21,4 +21,8 @@ function ColorFour()
     ColorEditor("bloop")
 end
 
-ColorOne()
+function ColorFive()
+    ColorEditor("catppuccin-mocha")
+end
+
+ColorFive()
