@@ -81,3 +81,10 @@ In file tree:
 ```:so``` = source file
 
 ```:PackerSync``` = sync with Packer
+
+### Git
+```:GitGutterEnable```
+
+```:GitGutterDisable```
+
+```:GitGutterToggle```

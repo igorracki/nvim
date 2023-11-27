@@ -25,4 +25,4 @@ function ColorFive()
     ColorEditor("catppuccin-mocha")
 end
 
-ColorFive()
+ColorThree()
