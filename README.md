@@ -3,11 +3,11 @@
 *Note*: Location of this config should be in ~/.config/nvim
 
 ## Key Maps
-```Shift + s``` = Find files
+```Ctrl + f``` = Find files
 
-```Ctrl + Shift + s``` = Find string in files
+```Ctrl + s``` = Find string in files
 
-```Leader + g``` = Find in Git files
+```Ctrl + g``` = Find in Git files
 
 ```Shift + e``` = Open file explorer (:Ex) (or NvimTree)
 
@@ -38,13 +38,11 @@
 ```Ctrl + [h,j,k,l]``` = Navigate between tabs.
 
 ## LSP Key Maps
-```Ctrl + [``` = Select previous item (or arrow up)
+```Ctrl + b``` = Select previous item (or arrow up)
 
-```Ctrl + ]``` = Select next item (or arrow down)
+```Ctrl + n``` = Select next item (or arrow down)
 
-```Shift + Enter``` = Confirm selection
-
-```Shift + Space``` = Start completion
+```Ctrl + i``` = Confirm selection
 
 ```gd``` = Go to definiton
 
@@ -54,11 +52,11 @@
 
 ```]d``` = Go to previous
 
-```Leader + vca``` = Code action
+```Leader + ca``` = Code action
 
-```Leader + vrr``` = References
+```Leader + ref``` = References
 
-```Leader + vrn``` = Rename
+```Leader + rn``` = Rename
 
 ```Ctrl + h``` = Signature help
 

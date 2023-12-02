@@ -13,13 +13,15 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    })
+--    use({
+--        'rose-pine/neovim',
+--        as = 'rose-pine',
+--        config = function()
+--            vim.cmd('colorscheme rose-pine')
+--        end
+--    })
+
+    use({ 'rose-pine/neovim', as = 'rose-pine' })
 
     use("folke/tokyonight.nvim")
 
@@ -70,4 +72,6 @@ return require('packer').startup(function(use)
             'nvim-tree/nvim-web-devicons', -- optional
         },
     }
+
+    use('mtdl9/vim-log-highlighting')
 end)

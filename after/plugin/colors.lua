@@ -6,23 +6,21 @@ function ColorEditor(color)
 end
 
 function ColorOne()
+    require('rose-pine').setup({ disable_italics = true, })
     ColorEditor()
 end
 
 function ColorTwo()
-    ColorEditor("poimandres")
-end
-
-function ColorThree()
     ColorEditor("tokyonight")
 end
 
-function ColorFour()
+function ColorThree()
     ColorEditor("bloop")
 end
 
-function ColorFive()
+function ColorFour()
+    require('catppuccin').setup({ flavour = 'mocha', no_italic = true, })
     ColorEditor("catppuccin-mocha")
 end
 
-ColorThree()
+ColorOne()
