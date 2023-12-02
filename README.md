@@ -31,6 +31,14 @@
 
 ```ci"``` = Change inside ".
 
+```vi(``` = Highlight indise (.
+
+```di{``` = Delete inside {.
+
+```va{``` = Highligth entire block you're in.
+
+```%``` = When at a start or end of a block (,),{,},",", etc. Jump between opening and closing character.
+
 ```Ctrl + t``` = New split tab.
 
 ```Ctrl + w``` = Quit tab.
