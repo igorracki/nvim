@@ -86,4 +86,6 @@ return require('packer').startup(function(use)
             "rcasia/neotest-java",
         }
     }
+
+    use('elentok/format-on-save.nvim')
 end)
