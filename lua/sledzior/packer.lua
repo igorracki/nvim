@@ -74,4 +74,16 @@ return require('packer').startup(function(use)
     }
 
     use('mtdl9/vim-log-highlighting')
+
+    use {
+        "nvim-neotest/neotest",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "antoinemadec/FixCursorHold.nvim",
+            "nvim-treesitter/nvim-treesitter",
+            "nvim-neotest/neotest-go",
+            "rouge8/neotest-rust",
+            "rcasia/neotest-java",
+        }
+    }
 end)

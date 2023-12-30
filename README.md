@@ -94,3 +94,22 @@ In file tree:
 ```:GitGutterDisable```
 
 ```:GitGutterToggle```
+
+### Tests
+```Leader + rt``` = Run nearest test
+
+```Leader + rf``` = Run all tests in current file
+
+```Leader + vtr``` = View test report
+
+```Leader + ctr``` = Close test report
+
+```Leader + srt``` = Stop running test
+
+```Leader + rlt``` = Run last test
+
+```Leader + vto``` = View test output
+
+```Leader + oto``` = Open test output panel
+
+```Leader + cto``` = Close test output panel
