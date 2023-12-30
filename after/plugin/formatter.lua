@@ -26,12 +26,12 @@ format_on_save.setup({
         yaml = formatters.lsp,
         -- Use a tempfile instead of stdin
         go = {
-            formatters.shell({
-                cmd = { "goimports-reviser", "-rm-unused", "-set-alias", "-format", "%" },
-                tempfile = function()
-                    return vim.fn.expand("%") .. '.formatter-temp'
-                end
-            }),
+            -- formatters.shell({
+            --     cmd = { "goimports-reviser", "-rm-unused", "-set-alias", "-format", "%" },
+            --     tempfile = function()
+            --         return vim.fn.expand("%") .. '.formatter-temp'
+            --     end
+            -- }),
             formatters.shell({ cmd = { "gofmt" } }),
         },
     },
