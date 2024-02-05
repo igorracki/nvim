@@ -10,16 +10,16 @@ return require('packer').startup(function(use)
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.4',
         -- or                            , branch = '0.1.x',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
---    use({
---        'rose-pine/neovim',
---        as = 'rose-pine',
---        config = function()
---            vim.cmd('colorscheme rose-pine')
---        end
---    })
+    --    use({
+    --        'rose-pine/neovim',
+    --        as = 'rose-pine',
+    --        config = function()
+    --            vim.cmd('colorscheme rose-pine')
+    --        end
+    --    })
 
     use({ 'rose-pine/neovim', as = 'rose-pine' })
 
@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
     use('https://github.com/rktjmp/lush.nvim')
     use('https://github.com/nocksock/bloop.nvim')
 
-    use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
@@ -51,15 +51,15 @@ return require('packer').startup(function(use)
         branch = 'v3.x',
         requires = {
             --- Uncomment these if you want to manage LSP servers from neovim
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'williamboman/mason.nvim' },
+            { 'williamboman/mason-lspconfig.nvim' },
 
             -- LSP Support
-            {'neovim/nvim-lspconfig'},
+            { 'neovim/nvim-lspconfig' },
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'L3MON4D3/LuaSnip'},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'L3MON4D3/LuaSnip' },
         }
     }
     use('ThePrimeagen/vim-be-good')
@@ -88,4 +88,22 @@ return require('packer').startup(function(use)
     }
 
     use('elentok/format-on-save.nvim')
+
+    use {
+        'olivercederborg/poimandres.nvim',
+        config = function()
+            require('poimandres').setup {
+                -- leave this setup function empty for default config
+                -- or refer to the configuration section
+                -- for configuration options
+                bold_vert_split = false,          -- use bold vertical separators
+                dim_nc_background = false,        -- dim 'non-current' window backgrounds
+                disable_background = false,       -- disable background
+                disable_float_background = false, -- disable background for floats
+                disable_italics = true,           -- disable italics
+            }
+        end
+    }
+
+    use("rebelot/kanagawa.nvim")
 end)
