@@ -27,6 +27,9 @@ function ColorFive()
     require('kanagawa').setup({
         commentStyle = { italic = false },
         keywordStyle = { italic = false },
+        functionStyle = { italic = false },
+        typeStyle = { italic = false },
+        statementStyle = { italic = false },
     })
     ColorEditor("kanagawa-dragon")
 end
