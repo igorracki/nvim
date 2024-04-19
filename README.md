@@ -3,7 +3,7 @@
 ## Requirements
 
 - Neovim >= v0.9.5
-  - [https://github.com/neovim/neovim/blob/master/INSTALL.md](Install Neovim)
+  - https://github.com/neovim/neovim/blob/master/INSTALL.md
 - Basic utils:
   - `git`
   - `make`
