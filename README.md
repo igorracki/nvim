@@ -76,10 +76,15 @@
 | `gc` **VISUAL** | Comment selected line(s) |
 
 `:Mason` - Open LSP manager, install language servers, linters, formatters...
+
 `:TSInstall <language>` - Install language grammar for TreeSitter.
+
 `:TSInstall <Tab>` - See available grammars.
+
 `:LspInfo` - View information about current LSPs attached to open buffers.
+
 `:LspLog` - View LSP logs.
+
 `:LspRestart` - Restart LSP.
 
 ### Harpoon
