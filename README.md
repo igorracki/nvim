@@ -43,6 +43,9 @@
 | ------- | ----- |
 | `<C-e` | Open/Close File Explorer |
 | `<C-hjkl>` | Navigate between panes |
+| `a` `FileExplorer` | Create new file/directory |
+| `d` `FileExplorer` | Delete |
+| `r` `FileExplorer` | Rename |
 | `<space>sh` | Search Help |
 | `<space>sk` | Search Keymaps |
 | `<S-f>` | Search Files |
@@ -111,3 +114,9 @@
 Enter command `:Git`, see options through `Tab`.
 
 E.g. `:Git blame` toggles the annotaitons buffer.
+
+### Maven
+
+Enter command `:Maven` to execute Maven goals.
+
+**Note**: Java LSP requires JDK >= 17 on the path.
