@@ -22,16 +22,16 @@
 ### Panes
 
 | Keybind | Action |
-| ------------- |
+| ------- | ----- |
 | `<C-w>s` | Split window horizonally |
 | `<C-w>v` | Split window vertically |
 | `<C-w>q` | Close pane |
-| `<C-h|j|k|l>` | Navigate between panes |
-| `<C-w>+|-` | Adjust height |
-| `<C-w><|>` | Adjust width |
+| `<C-hjkl>` | Navigate between panes |
+| `<C-w>+-` | Adjust height |
+| `<C-w><>` | Adjust width |
 | `<C-w>=` | Equal height and width |
 | `<C-w>_` | Max height |
-| `<C-w>|` | Max width |
+| `<C-w>PIPE` | Max width |
 | `<C-w>o` | Close all other windows |
 | `<C-w>T` | New tab |
 | `<C-w>w` | Switch windows |
@@ -40,9 +40,9 @@
 ### Navitagion
 
 | Keybind | Action |
-| ------------- |
+| ------- | ----- |
 | `<C-e` | Open/Close File Explorer |
-| `<C-h|j|k|l>` | Navigate between panes |
+| `<C-hjkl>` | Navigate between panes |
 | `<space>sh` | Search Help |
 | `<space>sk` | Search Keymaps |
 | `<S-f>` | Search Files |
@@ -56,7 +56,7 @@
 ### LSP
 
 | Keybind | Action |
-| ------------- |
+| ------- | ----- |
 | `<C-n>` | Next autocomplete suggestion |
 | `<C-p>` | Previous autocomplete suggestion |
 | `<C-b>` | Scroll documentation back |
@@ -85,7 +85,7 @@
 ### Harpoon
 
 | Keybind | Action |
-| ------------- |
+| ------- | ----- |
 | `<space>a` | Add file to list |
 | `<space>h` | Show list |
 | `<space>1..8` | Switch to file 1..8 within the list |
@@ -93,7 +93,7 @@
 ### Improved Around/Inside Text Objects
 
 | Keybind | Action |
-| ------------- |
+| ------- | ----- |
 | `va)` | Visual select Around ) |
 | `yinq` | Yank Inside Next Quote |
 | `ci(` | Change Inside ( |
