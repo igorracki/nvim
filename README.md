@@ -119,4 +119,29 @@ E.g. `:Git blame` toggles the annotaitons buffer.
 
 Enter command `:Maven` to execute Maven goals.
 
-**Note**: Java LSP requires JDK >= 17 on the path.
+**Note**: Java LSP requires JDK >= 17 on the path. The Maven plugin has been configured
+to run with the JDK set independently from what is on the `$PATH`,
+to support LSP and Maven builds for older projects.
+
+For this to work you will need a variation of the following script,
+called `neovim_maven` located somewhere on your `$PATH`.
+
+```bash
+#!/bin/bash
+
+if [[ -z "$JV" ]]; then
+    version="11"
+else
+    version="$JV"
+fi
+
+export JAVA_HOME=/path/to/your/jdk/installations/$version
+
+mvn -V "$@"
+```
+
+The `JV` environment properly can be used to switch between java versions. E.g.
+
+```bash
+export JV="17"
+```

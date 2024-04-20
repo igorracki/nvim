@@ -4,7 +4,7 @@ return {
 	dependencies = "nvim-lua/plenary.nvim",
 	config = function()
 		require("maven").setup({
-			executable = "mvn",
+			executable = "neovim_maven",
 		})
 	end,
 }
