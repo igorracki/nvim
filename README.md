@@ -41,16 +41,16 @@
 
 | Keybind | Action |
 | ------- | ----- |
-| `<C-e` | Open/Close File Explorer |
+| `<C-e>` | Open/Close File Explorer |
 | `<C-hjkl>` | Navigate between panes |
 | `a` `FileExplorer` | Create new file/directory |
 | `d` `FileExplorer` | Delete |
 | `r` `FileExplorer` | Rename |
 | `<space>sh` | Search Help |
 | `<space>sk` | Search Keymaps |
-| `<S-f>` | Search Files |
+| `<C-f>` | Search Files |
 | `<space>sw` | Search Current Word |
-| `<S-s>` | Fuzzy Search |
+| `<C-s>` | Fuzzy Search |
 | `<space><space>` | View Open Buffers |
 | `<space>/` | Fuzzy Search in Current Buffer |
 | `<space>s/` | Fuzzy Seach in Open Buffers |
