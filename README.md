@@ -64,7 +64,7 @@
 | `<C-p>` | Previous autocomplete suggestion |
 | `<C-b>` | Scroll documentation back |
 | `<C-f>` | Scroll documentation forward |
-| `<C-y>` | Accept autocomplete suggestion
+| `<Tab>` | Accept autocomplete suggestion |
 | `<C-space>` | Manually trigger autocomplete |
 | `gd` | Go to Definition |
 | `gr` | Go to References |
