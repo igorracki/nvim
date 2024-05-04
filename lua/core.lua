@@ -135,6 +135,17 @@ end
 -- Map the Tab key to the skip_delimiter function in Insert mode
 vim.keymap.set('i', '<Tab>', skip_delimiter, { noremap = true })
 
+-- Define a function to move the selected text up or down
+local function moveSelectedLines(direction)
+    local command = direction == 'up' and 'move \'<-2' or 'move \'>+1'
+    vim.cmd(command)
+    vim.cmd('normal! gv=gv')
+end
+
+-- Map Shift+K to move selected lines up and Shift+J to move selected lines down in Visual mode
+vim.keymap.set('v', '<S-K>', function() moveSelectedLines('up') end, { noremap = true })
+vim.keymap.set('v', '<S-J>', function() moveSelectedLines('down') end, { noremap = true })
+
 -- [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
