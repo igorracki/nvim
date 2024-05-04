@@ -112,6 +112,29 @@ if not vim.loop.fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
+local function contains(table, element)
+    for _, value in ipairs(table) do
+        if value == element then
+            return true
+        end
+    end
+    return false
+end
+
+-- Define a function to handle the Tab key press in Insert mode
+local function skip_delimiter()
+    local current_char = vim.api.nvim_get_current_line():sub(vim.api.nvim_win_get_cursor(0)[2], vim.api.nvim_win_get_cursor(0)[2])
+    local delimiters = { '(', ')', '[', ']', '{', '}', '"', "'" }
+    if contains(delimiters, current_char) then
+        vim.api.nvim_feedkeys('l', 'n', false)
+    else
+        vim.api.nvim_feedkeys('<Tab>', 'n', false)
+    end
+end
+
+-- Map the Tab key to the skip_delimiter function in Insert mode
+vim.keymap.set('i', '<Tab>', skip_delimiter, { noremap = true })
+
 -- [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
