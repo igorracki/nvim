@@ -67,6 +67,7 @@
 | `<Tab>` | Accept autocomplete suggestion |
 | `<C-space>` | Manually trigger autocomplete |
 | `gd` | Go to Definition |
+| `<C-t>` | Go Back after `gd` |
 | `gr` | Go to References |
 | `gI` | Go to Implementation |
 | `<space>D` | Type Definition |
