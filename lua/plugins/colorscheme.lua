@@ -11,17 +11,35 @@ local tokyonight = {
 local kanagawa = {
 	"rebelot/kanagawa.nvim",
 	config = function()
-		require("kanagawa").setup({
-			commentStyle = { italic = false },
-			keywordStyle = { italic = false },
-			overrides = function()
-				return {
-					["@variable.builtin"] = { italic = false },
-				}
-			end,
-		})
+		-- Only needed for Windows Terminal.
+		-- require("kanagawa").setup({
+		-- 	commentStyle = { italic = false },
+		-- 	keywordStyle = { italic = false },
+		-- 	overrides = function()
+		-- 		return {
+		-- 			["@variable.builtin"] = { italic = false },
+		-- 		}
+		-- 	end,
+		-- })
 		vim.cmd.colorscheme("kanagawa-dragon")
 	end,
 }
 
-return { kanagawa }
+local nord = {
+	"shaunsingh/nord.nvim",
+	config = function ()
+		vim.cmd.colorscheme("nord")
+	end
+}
+
+local catppuccin = {
+	"catppuccin/nvim",
+	config = function ()
+		require("catppuccin").setup({
+			flavor = "mocha",
+		})
+		vim.cmd.colorscheme("catppuccin")
+	end
+}
+
+return { nord }
