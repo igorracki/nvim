@@ -25,7 +25,7 @@ local kanagawa = {
 		-- 		}
 		-- 	end,
 		-- })
-		vim.cmd.colorscheme("kanagawa-dragon")
+		vim.cmd.colorscheme("kanagawa")
 	end,
 }
 
@@ -160,4 +160,4 @@ local sweetfusion = {
 	},
 }
 
-return { sweetfusion }
+return { kanagawa }
