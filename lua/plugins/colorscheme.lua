@@ -16,16 +16,25 @@ local kanagawa = {
 	"rebelot/kanagawa.nvim",
 	config = function()
 		-- Only needed for Windows Terminal.
-		-- require("kanagawa").setup({
-		-- 	commentStyle = { italic = false },
-		-- 	keywordStyle = { italic = false },
-		-- 	overrides = function()
-		-- 		return {
-		-- 			["@variable.builtin"] = { italic = false },
-		-- 		}
-		-- 	end,
-		-- })
-		vim.cmd.colorscheme("kanagawa")
+		require("kanagawa").setup({
+			commentStyle = { italic = false },
+			keywordStyle = { italic = false },
+			transparent = true,
+			dimInactive = false,
+			overrides = function()
+				return {
+					["@variable.builtin"] = { italic = false },
+				}
+			end,
+		})
+		vim.cmd.colorscheme("kanagawa-dragon")
+		vim.cmd.hi("LineNR guibg=NONE guifg=NONE")
+		vim.cmd.hi("GitSignsAdd guibg=NONE")
+		vim.cmd.hi("GitSignsChange guibg=NONE")
+		vim.cmd.hi("GitSignsDelete guibg=NONE")
+		vim.cmd.hi("GitSignsAddLn guibg=NONE")
+		vim.cmd.hi("GitSignsAddPreview guibg=NONE")
+		vim.cmd.hi("SignColumn guibg=NONE")
 	end,
 }
 
@@ -152,8 +161,8 @@ local sweetfusion = {
 		priority = 1000,
 		config = function()
 			require("sweet-fusion").setup({
-				transparency = false,
-				dim_insactive = false,
+				transparency = true,
+				dim_insactive = true,
 			})
 			vim.cmd.colorscheme("sweet-fusion")
 		end,
