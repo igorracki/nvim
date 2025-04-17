@@ -106,20 +106,20 @@ return {
 			--  - settings (table): Override the default settings passed when initializing the server.
 			local servers = {
 				-- See `:help lspconfig-all` for a list of all the pre-configured LSPs
-				gopls = {},
-				bashls = {},
-				rust_analyzer = {},
-				tsserver = {},
-				lua_ls = {
-					settings = {
-						Lua = {
-							completion = {
-								callSnippet = "Replace",
-							},
-						},
-					},
-				},
-				jdtls = {},
+			-- 	gopls = {},
+			-- 	bashls = {},
+			-- 	rust_analyzer = {},
+			-- 	tsserver = {},
+			-- 	lua_ls = {
+			-- 		settings = {
+			-- 			Lua = {
+			-- 				completion = {
+			-- 					callSnippet = "Replace",
+			-- 				},
+			-- 			},
+			-- 		},
+			-- 	},
+			-- 	jdtls = {},
 			}
 
 			-- Ensure the servers and tools above are installed
